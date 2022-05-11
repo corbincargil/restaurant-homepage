@@ -6,7 +6,7 @@
 body{
     background-color: var(--main-bg-color);
 }
-.header {
+#header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -19,7 +19,7 @@ body{
     gap: 10px;
 }
 
-.banner {
+#banner {
     background-color: var(--bannner-bg-color);
     margin-bottom: 30px;
     padding: 30px;
@@ -43,4 +43,51 @@ body{
 .review img {
     width: 64px;
     height: auto;
+}
+
+
+
+
+
+
+
+
+/*                                                 Footer */
+#footer{
+    margin: 20px 0px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    opacity: 80%;
+    font-size: 13px;
+}
+#footer img  {
+    aspect-ratio: 1;
+    width: 26px;
+    height: 26px;
+    flex-shrink: none;
+}
+#footer div{
+    display: flex;
+    gap: 6px;    
+    align-items: center;
+    color: var(--heading-one-color);
+}
+
+#footer a:hover {
+    transform: scale(1.05);
+    transition: .2s;
+}
+#footer a:hover img {
+    transform: rotate(1turn);
+    transition: 1s;
+}
+#footer a {
+    color: var(--heading-one-color);
+}
+a:visited {
+    text-decoration: none;
+    color: var(--heading-one-color);
 }

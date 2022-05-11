@@ -16,7 +16,17 @@
   \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst banner = () => {\n    const content = document.getElementById('content');\n\n    const banner = document.createElement('div');\n    banner.classList.add('banner');\n\n    const img = document.createElement('img');\n    img.src = 'https://www.eatthis.com/wp-content/uploads/sites/4/2022/03/berry-pies.jpg?quality=82&strip=1&w=640';\n\n    const slogan = document.createElement('h3');\n    slogan.textContent = '\\\"The best pies in South Texas!\\\"';\n\n    banner.appendChild(img);\n    banner.appendChild(slogan);\n    content.appendChild(banner);\n    return content;\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (banner); \n\n//# sourceURL=webpack://restaurant-homepage/./src/components/banner.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst banner = () => {\n    const content = document.getElementById('content');\n\n    const banner = document.createElement('div');\n    banner.setAttribute('id','banner');\n\n    const img = document.createElement('img');\n    img.src = 'https://www.eatthis.com/wp-content/uploads/sites/4/2022/03/berry-pies.jpg?quality=82&strip=1&w=640';\n\n    const slogan = document.createElement('h3');\n    slogan.textContent = '\\\"The best pies in South Texas!\\\"';\n\n    banner.appendChild(img);\n    banner.appendChild(slogan);\n    content.appendChild(banner);\n    return content;\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (banner); \n\n//# sourceURL=webpack://restaurant-homepage/./src/components/banner.js?");
+
+/***/ }),
+
+/***/ "./src/components/footer.js":
+/*!**********************************!*\
+  !*** ./src/components/footer.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst footer = () => {\n    const content = document.getElementById('content');\n\n    const footerContainer = document.createElement('div');\n    footerContainer.setAttribute('id','footer');\n\n    const footerTop = document.createElement('div');\n    footerTop.setAttribute('id','footer-top');\n    footerTop.textContent = 'Created by Corbin Cargil';\n    footerContainer.appendChild(footerTop);\n\n    const gitHubLogo = document.createElement('img');\n    gitHubLogo.src = 'https://cdn.iconscout.com/icon/free/png-256/github-3215409-2673827.png';\n    footerTop.appendChild(gitHubLogo);\n\n    const footerBottom = document.createElement('div');\n    footerBottom.setAttribute('id','footer-bottom');\n    footerBottom.textContent = 'As part of ';\n    footerContainer.appendChild(footerBottom);\n\n    \n    \n    content.appendChild(footerContainer);\n    return content;\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (footer);\n\n//# sourceURL=webpack://restaurant-homepage/./src/components/footer.js?");
 
 /***/ }),
 
@@ -26,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst header = () => {\n    const content = document.getElementById('content');\n    const header = document.createElement('div');\n    header.classList.add('header');\n\n    const logo = document.createElement('h1');\n    logo.setAttribute('id','main-title');\n    logo.textContent = 'The Pie Hole';\n\n    const navigation = document.createElement('ul');\n    navigation.classList.add('navigation');\n    const menu = document.createElement('li');\n    const about = document.createElement('li');\n    const location = document.createElement('li');\n    menu.textContent = 'Menu';\n    about.textContent = 'About';\n    location.textContent = 'Location';\n    navigation.appendChild(menu);\n    navigation.appendChild(about);\n    navigation.appendChild(location);\n\n    header.appendChild(logo);\n    header.appendChild(navigation);\n    content.appendChild(header);\n    return content;\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (header);\n\n\n//# sourceURL=webpack://restaurant-homepage/./src/components/header.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _functions_clear_body_contents__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../functions/clear-body-contents */ \"./src/functions/clear-body-contents.js\");\n/* harmony import */ var _pages_home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../pages/home */ \"./src/pages/home.js\");\n\n\n\nconst header = () => {\n    const content = document.getElementById('content');\n    const header = document.createElement('div');\n    header.setAttribute('id','header');\n\n    const logo = document.createElement('h1');\n    logo.setAttribute('id','main-title');\n    logo.textContent = 'The Pie Hole';\n    // logo.addEventListener('click', () => {\n    //     clearBody();\n    //     home();\n    // })\n\n    const navigation = document.createElement('ul');\n    navigation.classList.add('navigation');\n    const menu = document.createElement('li');\n    const about = document.createElement('li');\n    const location = document.createElement('li');\n    menu.textContent = 'Menu';\n    about.textContent = 'About';\n    location.textContent = 'Location';\n    navigation.appendChild(menu);\n    navigation.appendChild(about);\n    navigation.appendChild(location);\n\n    header.appendChild(logo);\n    header.appendChild(navigation);\n    content.appendChild(header);\n    return content;\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (header);\n\n\n//# sourceURL=webpack://restaurant-homepage/./src/components/header.js?");
 
 /***/ }),
 
@@ -40,13 +50,23 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/functions/clear-body-contents.js":
+/*!**********************************************!*\
+  !*** ./src/functions/clear-body-contents.js ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _components_footer__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/footer */ \"./src/components/footer.js\");\n\n//clears the contents of the main body of the page\n//plan is to clear all the 'next sibling's of the header, then add the footer\nconst clearBody = () => {\n    const content = document.getElementById('content');\n    const header = document.getElementById('header');\n    const body = document.getElementById('body');\n    if (body){body.remove();}\n    // while (header.nextElementSibling) {\n    //     header.nextElementSibling.remove();\n    // }\n    // footer();\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (clearBody);\n\n//# sourceURL=webpack://restaurant-homepage/./src/functions/clear-body-contents.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/header */ \"./src/components/header.js\");\n/* harmony import */ var _pages_home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pages/home */ \"./src/pages/home.js\");\n\n\n\n\n//create header\n(0,_components_header__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\n//body initally contains home (home page will contain banner and reviews)\n(0,_pages_home__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n\n//create footer\n\n//# sourceURL=webpack://restaurant-homepage/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_footer__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/footer */ \"./src/components/footer.js\");\n/* harmony import */ var _components_header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/header */ \"./src/components/header.js\");\n/* harmony import */ var _pages_home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages/home */ \"./src/pages/home.js\");\n/* harmony import */ var _functions_clear_body_contents__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./functions/clear-body-contents */ \"./src/functions/clear-body-contents.js\");\n\n\n\n\n\n\n//create header\n(0,_components_header__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n\n//body initally contains home (home page will contain banner and reviews)\n(0,_pages_home__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n\n//create footer\n(0,_components_footer__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\n\n//# sourceURL=webpack://restaurant-homepage/./src/index.js?");
 
 /***/ }),
 
