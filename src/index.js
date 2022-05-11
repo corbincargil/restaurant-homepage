@@ -1,17 +1,11 @@
 import header from './components/header';
-import banner from './components/banner';
-import reviews from './components/reviews';
+import home from './pages/home';
 
 
 //create header
 header();
 
 //body initally contains home (home page will contain banner and reviews)
-
-//testing banner
-banner();
-//testing reviews
-reviews();
-
+home();
 
 //create footer

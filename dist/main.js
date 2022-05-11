@@ -46,7 +46,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/header */ \"./src/components/header.js\");\n/* harmony import */ var _components_banner__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/banner */ \"./src/components/banner.js\");\n/* harmony import */ var _components_reviews__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/reviews */ \"./src/components/reviews.js\");\n\n\n\n\n\n//create header\n(0,_components_header__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\n//body initally contains home (home page will contain banner and reviews)\n\n//testing banner\n(0,_components_banner__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n//testing reviews\n(0,_components_reviews__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n\n\n//create footer\n\n//# sourceURL=webpack://restaurant-homepage/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/header */ \"./src/components/header.js\");\n/* harmony import */ var _pages_home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pages/home */ \"./src/pages/home.js\");\n\n\n\n\n//create header\n(0,_components_header__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\n//body initally contains home (home page will contain banner and reviews)\n(0,_pages_home__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n\n//create footer\n\n//# sourceURL=webpack://restaurant-homepage/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/pages/home.js":
+/*!***************************!*\
+  !*** ./src/pages/home.js ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _components_banner__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/banner */ \"./src/components/banner.js\");\n/* harmony import */ var _components_reviews__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/reviews */ \"./src/components/reviews.js\");\n\n\n\nconst home = () => {\n    const body = document.createElement('div');\n    body.classList.add('body');\n    (0,_components_banner__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n    (0,_components_reviews__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n\n    // const content = document.getElementById('content');\n    // content.appendChild(body);\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (home);\n\n//# sourceURL=webpack://restaurant-homepage/./src/pages/home.js?");
 
 /***/ })
 
