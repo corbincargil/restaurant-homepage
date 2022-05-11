@@ -6,9 +6,5 @@ const clearBody = () => {
     const header = document.getElementById('header');
     const body = document.getElementById('body');
     if (body){body.remove();}
-    // while (header.nextElementSibling) {
-    //     header.nextElementSibling.remove();
-    // }
-    // footer();
 }
 export default clearBody;

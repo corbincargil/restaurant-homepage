@@ -9,10 +9,10 @@ const header = () => {
     const logo = document.createElement('h1');
     logo.setAttribute('id','main-title');
     logo.textContent = 'The Pie Hole';
-    // logo.addEventListener('click', () => {
-    //     clearBody();
-    //     home();
-    // })
+    logo.addEventListener('click', () => {
+        clearBody();
+        home();
+    })
 
     const navigation = document.createElement('ul');
     navigation.classList.add('navigation');
