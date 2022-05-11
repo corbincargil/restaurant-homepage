@@ -1,0 +1,23 @@
+{
+  "name": "restaurant-homepage",
+  "version": "1.0.0",
+  "description": "Restaurant homepage to practice using Webpack and ES6 modules",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/corbincargil/restaurant-homepage.git"
+  },
+  "author": "Corbin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/corbincargil/restaurant-homepage/issues"
+  },
+  "homepage": "https://github.com/corbincargil/restaurant-homepage#readme",
+  "devDependencies": {
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2"
+  }
+}
