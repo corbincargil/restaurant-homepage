@@ -1,5 +1,5 @@
 const reviews = () => {
-    const content = document.getElementById('content');
+    const body = document.getElementById('body');
 
     const reviewContainer = document.createElement('div');
     reviewContainer.setAttribute('id','review-container');
@@ -10,7 +10,7 @@ const reviews = () => {
         newReview.setAttribute('id',`review-${i}`);
         reviewContainer.appendChild(newReview);
     }
-    content.appendChild(reviewContainer);
+    body.appendChild(reviewContainer);
 
     const reviewOne = document.getElementById('review-0');
     const reviewTwo = document.getElementById('review-1');
@@ -47,7 +47,7 @@ const reviews = () => {
     reviewThreeText.textContent = 'The staff was so kind and the pie was delicious. Well worth the trip!';
     reviewThree.appendChild(reviewThreeText);
 
-    return content;
+    return body;
 }
 
 export default reviews;

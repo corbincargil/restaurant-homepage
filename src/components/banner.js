@@ -1,5 +1,5 @@
 const banner = () => {
-    const content = document.getElementById('content');
+    const body = document.getElementById('body');
 
     const banner = document.createElement('div');
     banner.setAttribute('id','banner');
@@ -12,8 +12,8 @@ const banner = () => {
 
     banner.appendChild(img);
     banner.appendChild(slogan);
-    content.appendChild(banner);
-    return content;
+    body.appendChild(banner);
+    return body;
 }
 
 export default banner; 
