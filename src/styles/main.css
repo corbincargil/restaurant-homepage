@@ -1,0 +1,46 @@
+:root {
+    --main-bg-color: gray;
+    --bannner-bg-color: rgb(73, 73, 73);
+}
+
+body{
+    background-color: var(--main-bg-color);
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.navigation {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.banner {
+    background-color: var(--bannner-bg-color);
+    margin-bottom: 30px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#review-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.review {
+    padding: 10px;
+    width: min(30%,250px);
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.review img {
+    width: 64px;
+    height: auto;
+}
