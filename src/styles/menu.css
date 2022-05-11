@@ -1,0 +1,14 @@
+.pies {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .8fr .8fr;
+    width: minmax(500px, 90vw);
+    height: clamp(500px, 90%, 75vh);
+    column-gap: 20px;
+}
+
+.pie img {
+    aspect-ratio: 1;
+    width: clamp(200px, 30vw,270px);
+
+}

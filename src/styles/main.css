@@ -1,15 +1,26 @@
 :root {
     --main-bg-color: gray;
-    --bannner-bg-color: rgb(73, 73, 73);
+    --body-bg-color: rgb(73, 73, 73);
 }
 
 body{
+    margin: 0;
+    padding: 0;
     background-color: var(--main-bg-color);
+}
+
+#content {
+    margin: 0;
+    padding: 0px 6px;
 }
 #header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+}
+
+h1 {
+    margin: 0;
 }
 .navigation {
     list-style: none;
@@ -19,9 +30,9 @@ body{
     gap: 10px;
 }
 
-#banner {
-    background-color: var(--bannner-bg-color);
-    margin-bottom: 30px;
+#body {
+    background-color: var(--body-bg-color);
+    margin-bottom: 10px;
     padding: 30px;
     display: flex;
     flex-direction: column;
