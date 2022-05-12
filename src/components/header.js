@@ -2,6 +2,7 @@ import clearBody from "../functions/clear-body-contents";
 import home from "../pages/home";
 import displayMenu from "../pages/menu";
 import displayAbout from "../pages/about";
+import displayLocation from "../pages/location";
 
 const header = () => {
     const content = document.getElementById('content');
@@ -32,6 +33,10 @@ const header = () => {
         displayAbout();
     })
     location.textContent = 'Location';
+    location.addEventListener('click', () => {
+        clearBody();
+        displayLocation();
+    })
     navigation.appendChild(menu);
     navigation.appendChild(about);
     navigation.appendChild(location);
